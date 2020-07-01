@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Avia Tickets</title>
+<link href="./style.css" rel="stylesheet"></head>
+<body>
+  <nav class="header teal lighten-1">
+    <div class="nav-wrapper">
+      <div class="container d-flex align-items-center">
+        <div class="logo d-flex align-items-center">
+          <i class="large material-icons">flight_takeoff</i>
+          <a href="#" class="brand-logo">Avia Tickets</a>
+        </div>
+        <div class="favorites">
+          <a
+            class="dropdown-trigger btn purple lighten-5 black-text"
+            href="#"
+            data-target="dropdown1"
+            >Favorites</a
+          >
+          <div id="dropdown1" class="dropdown-content">
+          </div>
+        </div>        
+        <ul id="nav-mobile" class="right hide-on-med-and-down ml-auto">
+          <li><div class="input-field currency-select">
+            <select id="currency">
+              <option value="USD">$ US Dollar</option>
+              <option value="EUR">€ EURO</option>
+            </select>
+          </div></li>
+        </ul>
+      </div>      
+    </div>
+  </nav>
+  <div class="form-section">
+    <div class="container">
+      <div class="row d-flex">
+        <div class="col s12 m12 l12 mx-auto">
+          <div class="card">
+            <form name="locationControls">
+              <div class="card-content">
+                <span class="card-title">Find your tickets</span>
+                <div class="input-field">
+                  <input type="text" id="autocomplete-origin" class="autocomplete">
+                  <label for="autocomplete-origin">From</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="autocomplete-destination" class="autocomplete">
+                  <label for="autocomplete-destination">To</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" class="datepicker" id="datepicker-depart"/>
+                  <label for="datepicker-depart">Departure Date</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" class="datepicker" id="datepicker-return"/>
+                  <label for="datepicker-return">Arrival Date</label>
+                </div>
+              </div>              
+              <div class="card-action d-flex">
+                <button class="btn waves-effect waves-light light-blue accent-4" type="submit" name="action">Search
+                  <i class="material-icons right">send</i>
+                </button>
+                <button class="btn waves-effect waves-light red lighten-1 ml-auto" type="reset" name="action">Reset
+                  <i class="material-icons right">cancel</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tickets-sections">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="polyfill.6a6ded944cc43030f740.js"></script><script type="text/javascript" src="app.6a6ded944cc43030f740.js"></script></body>
+</html>
